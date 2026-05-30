@@ -3,6 +3,20 @@ import { type Processes } from "contexts/process/types";
 import { FOLDER_ICON, TASKBAR_HEIGHT } from "utils/constants";
 
 const directory: Processes = {
+  Blog: {
+    Component: dynamic(() => import("components/apps/Blog")),
+    backgroundColor: "#1a1b26",
+    defaultSize: {
+      height: 540,
+      width: 780,
+    },
+    icon: "/System/Icons/marked.webp",
+    libs: [
+      "/Program Files/Marked/marked.min.js",
+      "/Program Files/Marked/purify.min.js",
+    ],
+    title: "Blog",
+  },
   BoxedWine: {
     Component: dynamic(() => import("components/apps/BoxedWine")),
     allowResizing: false,
@@ -218,6 +232,17 @@ const directory: Processes = {
     hideTitlebarIcon: true,
     icon: "/System/Icons/photos.webp",
     title: "Photos",
+  },
+  Projects: {
+    Component: dynamic(() => import("components/apps/Projects")),
+    backgroundColor: "#1a1b26",
+    defaultSize: {
+      height: 540,
+      width: 720,
+    },
+    icon: "/System/Icons/pc.webp",
+    singleton: true,
+    title: "Projects",
   },
   Properties: {
     Component: dynamic(() => import("components/system/Dialogs/Properties")),
