@@ -1,4 +1,4 @@
-## 🌌 **daedalOS** 🌌
+## 🐧 **HyprDesk** 🐧
 
 ## _Desktop environment in the browser_
 

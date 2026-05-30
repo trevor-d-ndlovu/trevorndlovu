@@ -218,7 +218,7 @@ export const DESKTOP_PATH = `${HOME}/Desktop`;
 
 export const START_MENU_PATH = `${HOME}/Start Menu`;
 
-export const AI_TITLE = "Talos";
+export const AI_TITLE = "Hypr";
 
 export const AI_WINDOW_ID = "ai-chat-window";
 
@@ -371,16 +371,16 @@ export const DEFAULT_SCROLLBAR_WIDTH = 17;
 export const TASKBAR_HEIGHT = 30;
 
 export const PACKAGE_DATA = {
-  alias: "daedalOS",
+  alias: "HyprDesk",
   author: {
-    email: "dustinbrett@gmail.com",
-    name: "Dustin Brett",
-    npub: "npub10uc7hg6wdxhhd7ee8x9c5lr9d0ux7272rv2m0mc03ds54q7quxjss02r3p",
-    url: "https://dustinbrett.com",
+    email: "trevordonnell07@gmail.com",
+    name: "Trevor Ndlovu",
+    npub: "",
+    url: "https://trevorndlovu.com",
   },
-  description: "Desktop environment in the browser",
+  description: "Linux desktop environment in the browser",
   license: "MIT",
-  version: "2.0.0",
+  version: "1.0.0",
 };
 
 export const BASE_ZIP_CONFIG: AsyncZipOptions = {

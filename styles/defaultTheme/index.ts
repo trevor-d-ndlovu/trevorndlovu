@@ -6,7 +6,7 @@ import sizes from "styles/defaultTheme/sizes";
 const defaultTheme: DefaultTheme = {
   colors,
   formats,
-  name: "Dark",
+  name: "Tokyo Night",
   sizes,
 };
 
