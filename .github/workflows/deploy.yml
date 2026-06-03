@@ -21,3 +21,14 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 46b49d391f5b8c3a2e1e3ac6ee89a9d4
           command: pages deploy out/ --project-name hyprdesk --branch main
+
+  cleanup:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          gh api "/repos/\${{ github.repository }}/actions/runs?per_page=100&status=completed" \
+            --jq '.workflow_runs[:-5][] | .id' | xargs -I{} \
+            gh api -X DELETE "/repos/\${{ github.repository }}/actions/runs/{}"
+        env:
+          GH_TOKEN: \${{ github.token }}
